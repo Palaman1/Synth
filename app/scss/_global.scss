@@ -1,0 +1,52 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 21px;
+  background-color: #f3f7fa;
+}
+
+
+.header {
+  margin-bottom: 45px;
+}
+
+
+.container {
+  max-width: 754px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a,
+button,
+.filter-check__label {
+  @extend %cursor;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
