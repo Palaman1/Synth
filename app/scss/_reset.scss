@@ -3,8 +3,8 @@ html {
 }
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -32,6 +32,11 @@ dd {
   margin: 0;
 }
 
+ul[class],
+li {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -41,14 +46,9 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
-}
+  font: inherit
+} 
 
-a {
+a{
   text-decoration: none;
-}
-
-button {
-  background-color: transparent;
-  border: none;
 }
