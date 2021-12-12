@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <title>Synth</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header class="header">
     <div class="container">
@@ -15,14 +17,15 @@
           <img src="images/logo.svg" alt="Synth">
         </a>
         <div class="header__right">
-          <a class="header__right-user">
+          <a href="#" class="header__right-user">
             <p class="header__right-name">
               Arthur Wood
             </p>
             <img src="images/user.jpg" alt="User photo" class="header__right-img">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="header__right-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.4">
-                <path d="M4 6L8 10L12 6" stroke="#3E4056" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 6L8 10L12 6" stroke="#3E4056" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </g>
             </svg>
           </a>
@@ -37,9 +40,76 @@
           </a>
         </div>
       </div>
+      <div class="header__bottom">
+        <div class="product-tabs__top">
+          <a class="product-tabs__top-item product-tabs__top-item--active" href="#tab-1">
+            FEED
+          </a>
+          <a class="product-tabs__top-item" href="#tab-2">
+            EXPLORE
+          </a>
+          <a class="product-tabs__top-item" href="#tab-3">
+            DISCUSSIONS
+          </a>
+        </div>
+        <button class="header__bottom-btn" type="button">
+          <img src="images/plus.svg" alt="Write new synth" class="header__bottom-plus">
+        </button>
+      </div>
     </div>
   </header>
+  <section class="content">
+    <div class="container">
+      <div class="about">
+        <div class="about__user">
+          <img class="about__user-img" src="images/avatar.jpg" alt="Profile image">
+          <div class="about__user-name">
+            <h1 class="about__user-title">
+              Benjamin Clementine
+            </h1>
+            <p class="about__user-tag">
+              @benclementine
+            </p>
+            <a href="#" class="about__user-edit">
+              Edit Profile
+            </a>
+          </div>
+          <a href="#" class="about__user-more">
+            <img class="about__user-dots" src="images/icons/dots.svg" alt="More">
+          </a>
+        </div>
+        <div class="about__info">
+          <p class="about__info-numbers">
+            <span class="about__info-span">
+              45
+            </span>
+            synths
+          </p>
+          <p class="about__info-numbers">
+            <span class="about__info-span">
+              110
+            </span>
+            followers
+          </p>
+          <p class="about__info-numbers">
+            <span class="about__info-span">
+              322
+            </span>
+            following
+          </p>
+        </div>
+        <div class="about__description">
+          Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each, according to
+          CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
+        </div>
+      </div>
+      <div class="posts">
+
+      </div>
+    </div>
+  </section>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
