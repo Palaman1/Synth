@@ -1,0 +1,180 @@
+/* start media */
+
+/* start small desktop */
+
+@media (max-width: 1200px){
+  .container {
+    padding: 0 30px;
+  }
+
+  .feed {
+    & .container{
+      display: inline-flex;
+      width: 100vw;
+    }
+  }
+
+  .header__bottom-btn {
+    right: 40px;
+  }
+
+  .about {
+    margin-right: 26px;
+    min-width: 350px;
+    max-width: 350px;
+    &__user-img {
+      display: block;
+      min-width: 120px;
+      min-height: 120px;
+    }
+  }
+
+  .posts {
+    width: inherit;
+    &__cards {
+       grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+       justify-items: center;
+      &-item {
+        max-width: 100%;
+      }
+    }
+    &__cards-message__span{
+      position: absolute;
+      margin: 19px 0 0 -74px;
+    }
+  }
+}
+
+/* end small desktop */
+
+/* start tablet */
+
+@media (max-width: 1092px){
+  .feed {
+    & .container{
+      display: block;
+    }
+  }
+
+  .about {
+    min-width: 100%;
+    display: flex;
+    &__user {
+      margin: 0 48px;
+    }
+    &__user-more {
+      position: absolute;
+      right: 50px;
+    }
+    &__user-options {
+      margin-left: -152px;
+    }
+  }
+
+  .posts {
+    width: 100%;
+    &__switcher {
+      margin-top: -58px;
+      left: 10%;
+    }
+    &__cards {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+  }
+}
+
+/* end tablet */
+
+/* start mobile */
+
+@media (max-width: 768px){
+  
+  .about {
+    min-width: 100%;
+    display: block;
+    &__user {
+      margin: 0 0 32px;
+    }
+    &__profile {
+      min-width: 100%;
+    }
+    &__user-more {
+      position: absolute;
+      right: 30px;
+    }
+    &__user-options {
+      margin-left: -152px;
+    }
+  }
+
+  .posts {
+    &__switcher {
+      left: 5%;
+    }
+    &__cards-item {
+      width: 100%;
+    }
+    &__cards-message__span {
+      position: relative;
+      margin: 0;
+    }
+  }
+
+}
+
+
+@media (max-width: 490px){
+  .container {
+    padding: 0 20px;
+  }
+
+  .header {
+    &__right-user {
+      width: 52px;
+    }
+    &__right-name {
+      display: none;
+    }
+    &__bottom-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+    }
+  }
+  .feed .container {
+    min-width: 320px;
+    max-width: 100%;
+  }
+
+  .about {
+    max-width: 100%;
+    &__user-name {
+      margin: 0 0 0 18px;
+    }
+    &__user-more {
+      right: 0;
+    }
+  }
+  .posts {
+    &__switcher {
+      left: 8%;
+    }
+    &__cards {
+      justify-content: space-around;
+    }
+    &__cards-item {
+      max-width: 82%;
+      height: 100%;
+    }
+    &__cards-stats__views {
+      margin-right: 26px;
+    }
+    &__cards-author__name {
+      margin-left: 4px;
+    }
+  }
+} 
+
+/* end mobile */
+
+/* end media */

@@ -1,10 +1,11 @@
+/* start vars */
 $profile_clr: #3e3f58;
 $active-tab_clr: #3e4056;
 $option_clr: #636363;
 $link_clr: #f05d63;
 $header: #ffffff;
 $switcher: #ed5267;
-$card_clr: rgba(255,255,255, 0.94);
+$card_clr: rgba(255,255,255, 0.84);
 $background: rgba(236, 241, 248, 0.4);
 $card_hover: rgba(236, 241, 248, 0.6);
 $share_bcg: #ecf1f8;
@@ -15,3 +16,5 @@ $circle: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
   position: absolute;
   margin: 0px 0 0 -23px;
 }
+
+/* end vars */
