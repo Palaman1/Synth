@@ -4,8 +4,6 @@
   margin: 0px 0 0 -23px;
 }
 
-/*fonts */
-/* fonts */
 /* start reset styles */
 html {
   -webkit-box-sizing: border-box;
@@ -632,7 +630,7 @@ input:checked + .slider:before {
   }
   .about__user-more {
     position: absolute;
-    right: 50px;
+    right: 22px;
   }
   .about__user-options {
     margin-left: -152px;
