@@ -22,7 +22,8 @@
               Arthur Wood
             </p>
             <img src="images/user.jpg" alt="User photo" class="header__right-img">
-            <svg class="header__right-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="header__right-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <g opacity="0.4">
                 <path d="M4 6L8 10L12 6" stroke="#3E4056" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round" />
@@ -41,28 +42,30 @@
         </div>
       </div>
       <div class="header__bottom">
-        <div class="product-tabs__top">
-          <a class="product-tabs__top-item product-tabs__top-item--active" href="#tab-1">
+        <div class="header-tabs__top">
+          <a class="header-tabs__top-item header-tabs__top-item--active" href="#tab-1">
             FEED
           </a>
-          <a class="product-tabs__top-item" href="#tab-2">
+          <a class="header-tabs__top-item" href="#tab-2">
             EXPLORE
           </a>
-          <a class="product-tabs__top-item" href="#tab-3">
+          <a class="header-tabs__top-item" href="#tab-3">
             DISCUSSIONS
           </a>
         </div>
-        <button class="header__bottom-btn" type="button">
+        <button class="header__bottom-btn" type="button" title="Add new post">
           <img src="images/plus.svg" alt="Write new synth" class="header__bottom-plus">
         </button>
       </div>
     </div>
   </header>
-  <section class="content">
+  <article class="feed header-tabs__content-item header-tabs__content-item--active" id="tab-1">
     <div class="container">
-      <div class="about">
+      <section class="about">
         <div class="about__user">
-          <img class="about__user-img" src="images/avatar.jpg" alt="Profile image">
+          <a href="#" class="about__user-link">
+            <img class="about__user-img" src="images/avatar.jpg" alt="Profile image">
+          </a>
           <div class="about__user-name">
             <h1 class="about__user-title">
               Benjamin Clementine
@@ -74,41 +77,197 @@
               Edit Profile
             </a>
           </div>
-          <a href="#" class="about__user-more">
+          <div class="about__user-more">
             <img class="about__user-dots" src="images/icons/dots.svg" alt="More">
-          </a>
+            <div class="about__user-options">
+              <p class="about__user-report">
+                Report User
+              </p>
+              <p class="about__user-block">
+                Block User
+              </p>
+            </div>
+          </div>
         </div>
         <div class="about__info">
-          <p class="about__info-numbers">
+          <a href="#" class="about__info-numbers">
             <span class="about__info-span">
               45
             </span>
             synths
-          </p>
-          <p class="about__info-numbers">
+          </a>
+          <a href="#" class="about__info-numbers">
             <span class="about__info-span">
               110
             </span>
             followers
-          </p>
-          <p class="about__info-numbers">
+          </a>
+          <a href="#" class="about__info-numbers">
             <span class="about__info-span">
               322
             </span>
             following
-          </p>
+          </a>
         </div>
         <div class="about__description">
-          Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each, according to
+          Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each,
+          according to
           CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
         </div>
-      </div>
+      </section>
       <div class="posts">
-
+        <div class="posts__switcher">
+          <p class="posts__switcher-public">
+            Public
+          </p>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <p class="posts__switcher-private">
+            Private
+          </p>
+        </div>
+        <div class="posts__cards">
+          <section class="posts__cards-item">
+              <p class="posts__cards-message">
+                Shared to
+                <span class="posts__cards-message__span">
+                  #discussionaboutanimgttdds…
+                </span>
+              </p>
+              <a href="#" class="posts__cards-link">
+                <h1 class="posts__cards-title">
+                  New air routes that promise cheap flights in
+                </h1>
+              </a>
+              <div class="posts__cards-links">
+                <a href="#" class="posts__cards-author" title="Gregory Watkins">
+                  <img src="images/profile.jpg" alt="Profile photo" class="posts__cards-author__img">
+                  <p class="posts__cards-author__name">
+                    Gregory Watkins
+                  </p>
+                </a>
+                <button class="posts__cards-share" type="button">
+                  Share
+                </button>
+                <div class="posts__cards-stats">
+                  <span class="posts__cards-stats__views" title="Views">
+                    88
+                  </span>
+                  <span class="posts__cards-stats__likes" title="Likes">
+                    24
+                  </span>
+                </div>
+              </div>
+          </section>
+          <section class="posts__cards-item">
+              <p class="posts__cards-message posts__cards-message__web">
+                Shared via weblink
+              </p>
+              <a href="#" class="posts__cards-link">
+                <h1 class="posts__cards-title">
+                  New air routes that promise cheap flights in
+                </h1>
+              </a>
+              <div class="posts__cards-links">
+                <a href="#" class="posts__cards-author" title="Gregory Watkins">
+                  <img src="images/profile.jpg" alt="Profile photo" class="posts__cards-author__img">
+                  <p class="posts__cards-author__name">
+                    Gregory Watkins
+                  </p>
+                </a>
+                <button class="posts__cards-share" type="button">
+                  Share
+                </button>
+                <div class="posts__cards-stats">
+                  <span class="posts__cards-stats__views" title="Views">
+                    88
+                  </span>
+                  <span class="posts__cards-stats__likes" title="Likes">
+                    24
+                  </span>
+                </div>
+              </div>
+          </section>
+          <section class="posts__cards-item">
+              <p class="posts__cards-message">
+                Shared to
+                <span class="posts__cards-message__span">
+                  #discussionaboutanimgttdds…
+                </span>
+              </p>
+              <a href="#" class="posts__cards-link">
+                <h1 class="posts__cards-title">
+                  New air routes that promise cheap flights in
+                </h1>
+              </a>
+              <div class="posts__cards-links">
+                <a href="#" class="posts__cards-author" title="Gregory Watkins">
+                  <img src="images/profile.jpg" alt="Profile photo" class="posts__cards-author__img">
+                  <p class="posts__cards-author__name">
+                    Gregory Watkins
+                  </p>
+                </a>
+                <button class="posts__cards-share" type="button">
+                  Share
+                </button>
+                <div class="posts__cards-stats">
+                  <span class="posts__cards-stats__views" title="Views">
+                    88
+                  </span>
+                  <span class="posts__cards-stats__likes" title="Likes">
+                    24
+                  </span>
+                </div>
+              </div>
+          </section>
+          <section class="posts__cards-item">
+            <p class="posts__cards-message posts__cards-message__web">
+              Shared via weblink
+            </p>
+            <a href="#" class="posts__cards-link">
+              <h1 class="posts__cards-title">
+                New air routes that promise cheap flights in
+              </h1>
+            </a>
+            <div class="posts__cards-links">
+              <a href="#" class="posts__cards-author" title="Gregory Watkins">
+                <img src="images/profile.jpg" alt="Profile photo" class="posts__cards-author__img">
+                <p class="posts__cards-author__name">
+                  Gregory Watkins
+                </p>
+              </a>
+              <button class="posts__cards-share" type="button">
+                Share
+              </button>
+              <div class="posts__cards-stats">
+                <span class="posts__cards-stats__views" title="Views">
+                  88
+                </span>
+                <span class="posts__cards-stats__likes" title="Likes">
+                  24
+                </span>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
-  </section>
+  </article>
+  <article class="explore header-tabs__content-item" id="tab-2">
+    <div class="container">
+    New tab
+    </div>
+  </article>
+  <article class="discussions header-tabs__content-item" id="tab-3">
+    <div class="container">
+      Some text
+    </div>
+    
+  </article>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

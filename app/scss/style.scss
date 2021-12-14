@@ -55,28 +55,28 @@
         border-radius: 50%;
         background: $circle;
         z-index: -1;
-        right: 0%;
-        top: -10%;
+        right: 0;
+        top: -2px;
       }
     }
     &-plus {
       position: absolute;
       z-index: 8;
-      top: 22%;
-      left: 35%;
+      top: 20px;
+      left: 22px;
     }
   }
 
 }
 
-.product-tabs__top {
+.header-tabs__top {
   &-item {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
     opacity: 0.6;
   }
-  &-item + .product-tabs__top-item {
+  &-item + .header-tabs__top-item {
     margin-left: 36px;
   }
   &-item--active {
@@ -89,20 +89,286 @@
   }
 }
 
-.content {
+.header-tabs__top-item {
+  display: inline-block;
+}
+.header-tabs__content-item {
+  display: none;
+  &.header-tabs__content-item--active {
+    display: block;
+  }
+}
+
+.feed {
   & .container {
     display: flex;
     justify-content: space-between;
   }
 }
 
+.about {
+  width: 350px;
+  &__user {
+    display: flex;
+    margin-bottom: 32px;
+    &-img {
+      border-radius: 50%;
+    }
+    &-name {
+      max-width: 145px;
+      margin: 0 24px;
+    }
+    &-title {
+      margin-bottom: 8px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    &-tag {
+      margin-bottom: 16px;
+    }
+    &-edit {
+      color: $link_clr;
+      margin-left: 26px;
+      text-decoration: underline;
+      &::before {
+        content: url(../images/icons/edit.svg);
+        position: absolute;
+        margin: 2px 0 0 -28px;
+      }
+    }
+    &-more {
+      margin-top: 4px;
+      height: 46px;
+      width: 30px;
+      z-index: 1;
+      cursor: pointer;
+      &:hover *{
+        opacity: 1;
+        z-index: 1;
+        transform: translateX(0);
+      }
+    }
+    &-options {
+      background: $card_clr;
+      position: absolute;
+      margin-top: 20px;
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateX(-1000px);
+      width: 176px;
+      height: 124px;
+      padding: 24px 0;
+      backdrop-filter: blur(21.7463px);
+      box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.08);
+    }
+    &-options p {
+      height: 38px;
+      font-weight: 600;
+      padding: 8px 0 0 60px;
+      color: $active-tab_clr;
+      z-index: 6;
+    }
+    &-options p:hover {
+      background: $card_hover;
+      backdrop-filter: blur(54.3656px);
+    }
+    &-report::before {
+      content: url(../images/icons/report.svg);
+      position: absolute;
+      margin: 2px 0 0 -34px;
+    }
+    &-block::before {
+      content: url(../images/icons/block.svg);
+      position: absolute;
+      margin: 2px 0 0 -34px;
+    
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 282px;
+    margin-bottom: 24px;
+    &-numbers {
+      color: $option_clr;
+      line-height: 24px
+    }
+    &-span {
+      display: block;
+      color: $profile_clr;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  &__description {
+    line-height: 24px
+  }
+}
 
+.posts {
+  &__switcher {
+    position: absolute;
+    margin-top: -2px;
+    display: flex;
+    justify-content: space-between;
+    width: 202px;
+    & p {
+      color: $active-tab_clr;
+      font-weight: 600;
+    }
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 24px;
+    margin-top: 86px;
+    &-item {
+      padding: 24px;
+      width: 374px;
+      height: 280px;
+      background: $header;
+      border-radius: 8px;
+      box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.08);
+      &:hover {
+        box-shadow: 2px 24px 24px rgba(0, 0, 0, 0.11);
+      }
+    }
+    &-message {
+      opacity: 0;
+      color: $active-tab_clr;
+      line-height: 19px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    &-message__web {
+      margin-left: 20px;
+    }
+    &-message__web::before {
+      content: url(../images/icons/link.svg);
+      position: absolute;
+      margin: -1px 0 0 -21px;
+    }
+    &-message__span {
+      background: $share_bcg;
+      line-height: 16px;
+      text-transform: lowercase;
+    }
+    &-title {
+      font-size: 36px;
+      color: $active-tab_clr;
+      line-height: 44px;
+      margin-bottom: 46px;
+    }
+    &-links {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-author {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-author__name {
+      font-size: 14px;
+      font-weight: 600;
+      color: $active-tab_clr;
+      line-height: 16px;
+      margin: 4px 0 0 8px;
+    }
+    &-share {
+      color: $link_clr;
+    }
+    &-stats {
+      display: none;
+      margin-top: 4px;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 600;
+      color: $active-tab_clr;
+      cursor: pointer;
+    }
+    &-stats__views {
+      margin-right: 34px;
+    }
+    &-stats__views::before {
+      content: url(../images/icons/views.svg);
+      @extend %icons;
+    }
+    &-stats__likes::before {
+      content: url(../images/icons/likes.svg);
+      @extend %icons;
+    }
+  }
+}
 
+.posts__cards-message--active {
+  opacity: 1;
+}
 
+.posts__cards-share--disable {
+  display: none;
+  translate: 0.1s;
+  & + .posts__cards-stats {
+    display: block;
+  }
+}
 
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  margin-left: 78px;
+}
 
+.switch input {display:none;}
 
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $switcher;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
 
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 18px;
+  bottom: 3px;
+  background-color: $header;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: $switcher;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $switcher;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(-14px);
+  -ms-transform: translateX(-14px);
+  transform: translateX(-14px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 
 
